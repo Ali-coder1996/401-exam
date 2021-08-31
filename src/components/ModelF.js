@@ -10,9 +10,12 @@ class ModelF extends Component {
                     </Modal.Header>
                     <Modal.Body>
                         <Form onSubmit={this.props.updata}>
+                            <label>img</label>
                             <Form.Control type="text" name='image_url' defaultvalue={this.props.image_url} />
+                            <label>toUSD</label>
                             <Form.Control type="text" name='toUSD' defaultvalue={this.props.toUSD} />
-                            <Form.Control type="text" name='description' defaultvalue={this.description} />
+                            <label>description</label>
+                            <Form.Control type="text" name='description' defaultvalue={this.props.description} />
 
                         </Form>
                         <Button variant="primary" type='submit'>
